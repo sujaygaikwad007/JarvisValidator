@@ -17,7 +17,7 @@ JarvisValidator is a pod designed to validate user credentials, including email 
 
 ### CocoaPods
 
-JarvisValidator is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+JarvisValidator is available through [CocoaPods](https://cocoapods.org/pods/JarvisValidator). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'JarvisValidator'
