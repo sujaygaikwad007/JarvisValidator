@@ -42,7 +42,7 @@ To use JarvisValidator in your project, follow these steps:
     print("Email is valid: \(isValidEmail)")
 
     // Validate a PAN number
-    let isValidPAN = Validator.validPAN(pan: "BAJPC4350M")
+    let isValidPAN = Validator.validPAN(pan: "ABCDE4350M")
     print("PAN is valid: \(isValidPAN)")
 
     // Validate a password
