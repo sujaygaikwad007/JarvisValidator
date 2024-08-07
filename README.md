@@ -7,6 +7,7 @@
 JarvisValidator is a pod designed to validate user credentials, including email addresses, passwords, and PAN numbers. It ensures that the data provided meets the specified standards and formats, enhancing security and data integrity for your application.
 
 
+
 ## Requirements
 
 - iOS 15.0+
@@ -20,3 +21,39 @@ JarvisValidator is available through [CocoaPods](https://cocoapods.org). To inst
 
 ```ruby
 pod 'JarvisValidator'
+```
+
+
+## Usage
+
+To use JarvisValidator in your project, follow these steps:
+
+1. Import the module:
+
+    ```swift
+    import JarvisValidator
+    ```
+
+2. Use the provided validation methods to check user credentials:
+
+    ```swift
+    // Validate an email address
+    let isValidEmail = Validator.validEmail(email: "demo12@gmail.com")
+    print("Email is valid: \(isValidEmail)")
+
+    // Validate a PAN number
+    let isValidPAN = Validator.validPAN(pan: "BAJPC4350M")
+    print("PAN is valid: \(isValidPAN)")
+
+    // Validate a password
+    let isValidPassword = Validator.validPassword(password: "Password@123", minLength: 8, specialCharsCount: 1, requiresCapitalLetter: true)
+    print("Password is valid: \(isValidPassword)")
+    ```
+
+These methods will help ensure that user inputs meet the required standards and formats.
+
+
+
+
+
+
