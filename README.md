@@ -20,12 +20,3 @@ JarvisValidator is available through [CocoaPods](https://cocoapods.org). To inst
 
 ```ruby
 pod 'JarvisValidator'
-
-```swift
-import JarvisValidator
-
-Validator.validEmail(email: "demo12@gmail.com")
-Validator.validPAN(pan: "BAJPC4350M")
-Validator.validPassword(password: "Password@123", minLength: 8, specialCharsCount: 1, requiresCapitalLetter: true)
-
-
