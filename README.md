@@ -1,24 +1,32 @@
 # JarvisValidator
-This is custom validator which is used to  check email is valid or not
 
-# YourPodName
 
-[![Version](https://img.shields.io/cocoapods/v/YourPodName.svg?style=flat)](https://cocoapods.org/pods/YourPodName)
-[![License](https://img.shields.io/cocoapods/l/YourPodName.svg?style=flat)](https://cocoapods.org/pods/YourPodName)
-[![Platform](https://img.shields.io/cocoapods/p/YourPodName.svg?style=flat)](https://cocoapods.org/pods/YourPodName)
+ [![Version](https://img.shields.io/cocoapods/v/YourPodName.svg?style=flat)](https://cocoapods.org/pods/JarvisValidator)
+ [![License](https://img.shields.io/cocoapods/l/YourPodName.svg?style=flat)](https://cocoapods.org/pods/JarvisValidator)
+ [![Platform](https://img.shields.io/cocoapods/p/YourPodName.svg?style=flat)](https://cocoapods.org/pods/JarvisValidator)
 
-YourPodName is a [brief description of your pod].
+JarvisValidator is a [This pod is designed to validate user credentials, including email addresses, passwords, and PAN numbers. It ensures that the data provided meets the specified standards and formats, enhancing security and data integrity for your application.].
+
+## Example
+
+```ruby
+import JarvisValidator
+Validator.validEmail(email: "demo12@gmail.com")
+Validator.validPAN(pan: "BAJPC4350M")
+Validator.validPassword(password: "Password@123", minLength: 8, specialCharsCount: 1, requiresCapitalLetter: true)
+
+
 
 ## Requirements
 
-- iOS X.X+
-- Swift X.X+
+- iOS 15.0+
+- Swift 5.0+
 
 ## Installation
 
 ### CocoaPods
 
-YourPodName is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+JarvisValidator is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YourPodName'
+pod 'JarvisValidator'
